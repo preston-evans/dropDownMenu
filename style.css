@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.news {
+  display: none;
+  position: absolute;
+}
+.news a {
+  border-bottom: thin solid black;
+}
+.news a:first-child {
+  border-top: thin solid black;
+}
+li:nth-child(3) {
+  position: relative;
+}
+li:nth-child(3):hover .news {
+  display: block;
+}
+li {
+  display: inline-block;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 1em 2em;
+}
+a:hover {
+  color: white;
+  background-color: black;
+}
